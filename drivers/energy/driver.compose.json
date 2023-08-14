@@ -1,0 +1,45 @@
+{
+  "name": {
+    "en": "Energy"
+  },
+  "class": "other",
+  "capabilities": [
+    "meter_power",
+    "meter_gas",
+    "meter_water"
+  ],
+  "platforms": [
+    "local"
+  ],
+  "connectivity": [
+    "lan"
+  ],
+  "images": {
+    "small": "{{driverAssetsPath}}/images/small.png",
+    "large": "{{driverAssetsPath}}/images/large.png",
+    "xlarge": "{{driverAssetsPath}}/images/xlarge.png"
+  },
+  "pair": [
+    {
+      "id": "login_credentials",
+      "template": "login_credentials",
+      "options": {
+        "logo": "logo.png",
+        "title": {
+          "en": "Add the ip address of your Cemm Energy Gateway"
+        },
+        "usernameLabel": { "en": "IP address" },
+        "usernamePlaceholder": { "en": "127.0.0.1" }
+      }
+    },
+    {
+      "id": "list_devices",
+      "template": "list_devices",
+      "navigation": { "next": "add_devices" }
+    },
+    {
+      "id": "add_devices",
+      "template": "add_devices"
+    }
+  ]
+}
